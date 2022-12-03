@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webseries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h3{
+  color: black;
+  font-size: 25px;
+}
+p,h1,h2
+{
+	color: black;
+	font-size: 15px;
+}
+.post
+{
+padding: 10px;
+width: 70px;
+}
+.pannel-body
+{
+	color: black;
+}
+
+#Home {background-image:url("images/13-reasons.jpg");}
+#News {background-image:url("images/13-reasons.jpg");}
+#Contact {background-image:url("images/13-reasons.jpg");}
+#About {background-color: black;}
+
+body {
+	background-color: #666;	
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	background-color:#05859e;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+	
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+.panel-body {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.rating{
+  display:block;
+}
+
+</style>
+</head>
+<body>
+	
+   
+	<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+     <img src="images/logo.png">
+  </div>
+</div>
+
+
+
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen">Season 1</button>
+<button class="tablink" onclick="openPage('News', this, 'orange')" >Season 2</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Season 3</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+ 
+<div id="Home" class="tabcontent">
+
+<!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Wolferton Splash /
+Crown(season 1, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown.jpg">
+      	<p class="pannel-body">Princess Elizabeth and Prince Philip get married; as King George VI's health declines, Winston Churchill is elected prime minister for the second time.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Hyde Park Corner /
+Crown(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown.jpg">
+      	<p class="pannel-body">While King George is too sick to travel, Elizabeth and Philip go on a four-continent tour; party leaders try to undermine Churchill.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Windsor /
+Crown(season 1, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown.jpg">
+      	<p class="pannel-body">As Elizabeth takes on a new role, Philip wants to assert some power; Churchill wants the coronation delayed; King George's brother arrives.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Act of God /
+Crown(season 1, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown.jpg">
+      	<p class="pannel-body">London is impacted by a dense fog, which creates a serious health hazard; Churchill's unwillingness to take action puts him in a vulnerable position.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Smoke and Mirrors /
+Crown(season 1, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown.jpg">
+      	<p class="pannel-body">Elizabeth ignores protocol and asks Philip to coordinate her coronation, but his ideas cause conflict; the Duke of Windsor comes back to London.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+ 
+
+</div>
+
+<div id="News" class="tabcontent">
+<!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Misadventure
+(season 2, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown2.jpg">
+      	<p class="pannel-body">As Philip leaves for a long tour, Elizabeth makes an upsetting discovery; Prime Minister Eden wants to strike back after Egypt seizes the Suez Canal.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>A Company of Men
+(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown2.jpg">
+      	<p class="pannel-body">Elizabeth feels disconnected from Philip; Eden copes with international pressure and ill health; an interview stirs up harrowing memories for Philip.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Lisbon
+(season 2, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown2.jpg">
+      	<p class="pannel-body">Worried about threats against them, Alex and Clay urge Jessica to testify about Bryce; Clay enlists Tony's help to find a potential witness.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Beryl
+(season 2, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown2.jpg">
+      	<p class="pannel-body">When Elizabeth and Philip throw a grand party for their 10th anniversary, both Margaret and the new prime minister experience romantic tribulations.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+  <!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Marionettes
+(season 3, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown3.jpg">
+      	<p class="pannel-body">After Elizabeth makes a tone-deaf speech at a Jaguar factory, she and the monarchy come under public attack from an outspoken lord.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Vergangenheit
+(season 3, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown3.jpg">
+      	<p class="pannel-body">A secret World War II document opens Elizabeth's eyes to grim realities about a family member; the Duke of Windsor campaigns to re-enter public life.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Matrimonium
+(season 3, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown3.jpg">
+      	<p class="pannel-body">A letter from Peter Townsend spurs Margaret to make a bold proposal; Elizabeth has good news that causes complications for Margaret.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Dear Mrs. Kennedy
+(season 3, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown3.jpg">
+      	<p class="pannel-body">Inspired by Jackie Kennedy -- and against her government's wishes -- Elizabeth takes an unconventional approach to resolving an issue with Ghana.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Paterfamilias
+(season 3, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/crown3.jpg">
+      	<p class="pannel-body">Philip insists that Prince Charles attend his alma mater in Scotland and reminisces about the life-changing difficulties he experienced there.</p>
+      </div>
+      <a href="Admin/crown.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3 style="color: white;">The Crown (TV series)</h3>
+  <p class="rating" style="color: white;">IMDB:8.7/10</p>
+  <p class="rating" style="color: white;">Rotten Tomatoes:92%</p>
+  <p class="rating" style="color: white;">Tv.com:8.5/10</p>
+  <p style="color: white;">The Crown is a historical drama television series about the reign of Queen Elizabeth II. Created and principally written by Peter Morgan and produced by Left Bank Pictures and Sony Pictures Television for Netflix, The Crown evolved out of Morgan's 2006 film The Queen and 2013 stage play The Audience. The first season covers the period from Queen Elizabeth's marriage to Philip, Duke of Edinburgh, in 1947 to the disintegration of her sister Princess Margaret's engagement to Group Captain Peter Townsend in 1955. The second season covers the period from the Suez Crisis in 1956 through the retirement of the Queen's third prime minister, Harold Macmillan, in 1963 to the birth of Prince Edward in 1964. The third season will span the period between 1964 and 1977, including Harold Wilson's two periods as prime minister, while the fourth will include Margaret Thatcher's premiership and introduce Lady Diana Spencer.[5]
+
+The series is intended to last 60 episodes over six seasons, with 10 one-hour episodes per season, covering Elizabeth's life from her younger years to her reign, and with new actors being cast every two seasons. Claire Foy portrays the Queen in the first two seasons, alongside Matt Smith as Prince Philip, and Vanessa Kirby as Princess Margaret. For the third and fourth seasons, Olivia Colman will take over as the Queen, Tobias Menzies as Prince Philip, and Helena Bonham Carter as Princess Margaret. Filming for the series takes place at Elstree Studios in Borehamwood, Hertfordshire, with location shooting throughout the United Kingdom and internationally.
+</p>
+<p style="color: white;">
+The first season was released on Netflix on November 4, 2016, with the second released on December 8, 2017. The series has been renewed for a third and fourth season, with the third season scheduled to be released on November 17, 2019. The Crown has been praised for its acting, direction, writing, cinematography, production values, and the relatively accurate historical account of Queen Elizabeth's reign. It has received several accolades; at the 23rd Screen Actors Guild Awards, it won Best Actress for Foy in the lead role, and Best Actor for John Lithgow as Winston Churchill. It also received a total of 26 nominations for its first two seasons at the Primetime Emmy Awards, including twice for Outstanding Drama Series.</p>
+</div>
+
+<
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

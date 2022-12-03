@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h3{
+  color: black;
+  font-size: 25px;
+}
+p,h1,h2
+{
+	color: black;
+	font-size: 15px;
+}
+.post
+{
+padding: 10px;
+width: 70px;
+}
+.pannel-body
+{
+	color: black;
+}
+
+#Home {background-image:url("images/13-reasons.jpg");}
+#News {background-image:url("images/13-reasons.jpg");}
+#Contact {background-image:url("images/13-reasons.jpg");}
+#About {background-color: black;}
+
+body {
+	background-color: #666;	
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	background-color:#05859e;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+	
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+.panel-body {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+</style>
+</head>
+<body>
+	
+   
+	<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+     <img src="images/logo.png">
+  </div>
+</div>
+
+
+
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen">Season 1</button>
+<button class="tablink" onclick="openPage('News', this, 'orange')" >Season 2</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Season 3</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+ 
+<div id="Home" class="tabcontent">
+
+<!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Winter is Coming /
+Game of Thrones(season 1, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got.jpg">
+      	<p class="pannel-body"> Eddard "Ned" Stark, gets involved in the court politics after the king chooses Eddard to replace his recently deceased chief administrator ("Hand of the King").</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>The Kingsroad /
+Game of Thrones(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got.jpg">
+      	<p class="pannel-body">Eddard Stark and his daughters accompany the king's entourage to King's Landing to occupy the post of Hand of the King, Tyrion Lannister joins Jon in his travel to the Wall, and the newly wed Daenerys goes with her husband's khalasar to the city of Vaes Dothrak. Meanwhile, in Winterfell a grieving Catelyn Stark watches over her unconscious son Bran.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Cripples, Bastards, and Broken Things /
+Game of Thrones(season 1, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got.jpg">
+      	<p class="pannel-body"> Lord Eddard Stark, the new Hand of the King, investigates the sudden death of his predecessor. Jon Snow, Eddard's bastard son, defends a new recruit who has just joined the rangers at "the Wall". Exiled prince Viserys becomes increasingly frustrated as the Dothraki horde he needs to invade Westeros and win back his crown continues to linger at Vaes Dothrak.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>The Wolf and the Lion /
+Game of Thrones(season 1, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got.jpg">
+      	<p class="pannel-body">In the city of King's Landing, the Tourney of the Hand comes to an end while the various factions that plot for power are revealed to the viewer. This delicate balance is undone when news arrives that Tyrion Lannister has been arrested by Catelyn Stark.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Lord Snow /
+Game of Thrones(season 1, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got.jpg">
+      	<p class="pannel-body">Jon Snow's training at The Wall; Eddard's arrival at King's Landing, followed by Catelyn, looking for Bran's would-be murderer; Arya reveals her desire to learn sword fighting to her father; Joffrey is given a lesson in ruling the Kingdom by Cersei, and Robert longs for the glory of his past.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+ 
+
+</div>
+
+<div id="News" class="tabcontent">
+<!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The North Remembers
+(season 2, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got2.jpg">
+      	<p class="pannel-body">With a war on the horizon, the Seven Kingdoms are witnessing an ever-growing clash of kings. The boy king Joffrey Baratheon (Jack Gleeson) sits on the Iron Throne guided by cruelty and deceit, while his honorable counterpart Robb Stark (Richard Madden) of the North heads south to avenge his father's death.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The Night Lands
+(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got2.jpg">
+      	<p class="pannel-body">the Night's Watch caravan heading to the Wall is interrupted by a pair of City Watch guards looking for Gendry, the Small Council receives the terms proposed by King in the North Robb Stark, Daenerys waits in the desert for the return of the three riders she had sent out, and Theon Greyjoy returns to his homeland of the Iron Islands.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>What Is Dead May Never Die
+(season 2, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got2.jpg">
+      	<p class="pannel-body"> the aftermath of Jon Snow's investigation into Craster, Catelyn Stark's journey to the Stormlands in order to ask for Renly Baratheon's assistance in fighting the Lannisters, Theon's internal conflict as to where his allegiance lies, Tyrion Lannister uses his cunning to find his sister's spy within the Small Council, and Arya is consoled by Yoren before being confronted by soldiers looking for Gendry.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Garden of Bones
+(season 2, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got2.jpg">
+      	<p class="pannel-body">Ser Jorah Mormont to describe the desert surrounding the city of Qarth to Daenerys.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+  <!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Valar Dohaeris
+(season 3, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got3.jpg">
+      	<p class="pannel-body">with the Lannisters consolidating their power at King's Landing in the aftermath of the Battle of the Blackwater. Meanwhile, Jon Snow meets the "King beyond the Wall," and Daenerys leaves Qarth for Slaver's Bay.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Dark Wings, Dark Words
+(season 3, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got3.jpg">
+      	<p class="pannel-body"> Robb Stark receives news of the death of Hoster Tully as well as the sack of Winterfell and the disappearances of Bran and Rickon.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Walk of Punishment
+(season 3, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got3.jpg">
+      	<p class="pannel-body"> a road where slaves are crucified and displayed as examples to the slaves who thought of disobeying their masters.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>And Now His Watch Is Ended
+(season 3, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got3.jpg">
+      	<p class="pannel-body">The episode's title comes from a chant made by the Night's Watch at the funeral of a fallen brother while at Craster's Keep.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Kissed by Fire
+(season 3, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/got3.jpg">
+      	<p class="pannel-body">the red-haired Wildlings, like Ygritte, who are said to be "kissed by fire". Fire is also a key element in other storylines, with Sandor Clegane's fear of fire being shown, as well as the Mad King's obsession with Wildfire, as told by Jaime Lannister.</p>
+      </div>
+      <a href="Admin/got.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3 style="color: white;">Game of Thrones</h3>
+  <p class="rating" style="color: white;">IMDB:9.4/10</p>
+  <p class="rating" style="color: white;">Rotten Tomatoes:89%</p>
+  <p class="rating" style="color: white;">Tv.com:9/10</p>
+  <p style="color: white;">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones. The show was both produced and filmed in Belfast and elsewhere in the United Kingdom. Filming locations also included Canada, Croatia, Iceland, Malta, Morocco, and Spain.[1] The series premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
+
+Set on the fictional continents of Westeros and Essos, Game of Thrones has several plots and a large ensemble cast and follows several story arcs. One arc is about the Iron Throne of the Seven Kingdoms and follows a web of alliances and conflicts among the noble dynasties either vying to claim the throne or fighting for independence from it. Another focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled and is plotting a return to the throne, while another story arc follows the Night's Watch, a brotherhood defending the realm against the fierce peoples and legendary creatures of the North.
+</p>
+<p style="color: white;">Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. The series was acclaimed by critics for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) was criticized; the final season received further criticism for its condensed story and creative decisions, with many considering it a disappointing conclusion. The series received 58 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018, 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation (2012–2014), a 2011 Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama (2012 and 2015–2018). In 2019, the show's final season established a new record for most Emmy nominations received in the same year by any regular series with 32, breaking the 25 years long record of 26 nominations established by NYPD Blue in 1994; it also established Game of Thrones as the drama series with the most overall Emmy nominations, with a total of 161.[2]
+
+Of the ensemble cast, Peter Dinklage has won four Primetime Emmy Awards for Outstanding Supporting Actor in a Drama Series (2011, 2015, 2018, and 2019) and the Golden Globe Award for Best Supporting Actor – Series, Miniseries or Television Film (2012) for his performance as Tyrion Lannister. Alfie Allen, Gwendoline Christie, Emilia Clarke, Nikolaj Coster-Waldau, Lena Headey, Kit Harington, Sophie Turner, Diana Rigg, Carice van Houten, Max von Sydow, and Maisie Williams have also received Primetime Emmy Award nominations for their performances.</p>
+</div>
+
+<
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

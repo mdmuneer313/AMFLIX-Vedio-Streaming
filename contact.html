@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+  * {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("images/back1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*.topnav a.active {
+  background-color: black;
+  color: white;
+}
+*/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#moviesf {
+  top: 80px;
+  background-color: #4CAF50;
+}
+
+#seriesf {
+  top: 140px;
+  background-color: #2196F3;
+}
+
+#showsf {
+  top: 200px;
+  background-color: #f44336;
+}
+
+#newrelesef {
+  top: 260px;
+  background-color: #555
+}
+
+.card {
+ 
+   width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     display: inline-block;
+     text-align: center;
+   box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+     background-color: orange;
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+button
+{
+  color:white;
+}
+button {
+  border: none;
+  outline: 0;
+  display:block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i>Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i>Tvshows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+   <div class="search-container">
+   <img src="images/logo.png">
+    </form>
+  </div> 
+</div>
+
+
+<div class="card">
+  <img src="images/muneer1.jpg" alt="John" style="width:760px; height:930px;">
+  <h1>MOHAMMED MUNIRUDDIN</h1>
+  <p class="title">WEB DEVLOPER</p>
+  <p>Ballari Institute of Technology & Management,VTU</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button onclick="contactm()">Contact</button></p>
+   
+  </div>
+  <div class="card">
+  <img src="images/aswith.jpg" alt="John" style="width:100%">
+  <h1>ASWITH KUMAR CHEELLA</h1>
+  <p class="title">WEB DEVLOPER</p>
+  <p>Ballari Institute of Technology & Management,VTU</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button onclick="contacta()">Contact</button></p>  
+  </div>
+ 
+</div>
+<script>
+  function contactm()
+  {
+    alert("you can contact him at :+919066724717");
+  }
+  function contacta()
+  {
+    alert("you can contact him at :+917975705512");
+  }
+</script>
+
+</body>
+</html>

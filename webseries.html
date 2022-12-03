@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+<style type="text/css">
+  *{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px orange;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+  color: white;
+ }
+ p{
+  color: white;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: red;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+.playone
+{
+  padding: 10px 40px;
+  margin: 20px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+    <img src="images/logo.png">
+  </div>
+</div>
+
+
+<div style="margin-left:80px;">
+ 
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+
+<div class="main">
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/13reasons.jpg">
+</div>
+<div class="title">
+ <h1>
+13 Reasons Why(season 1)</h1>
+</div>
+<div class="des">
+ <p>
+Follows teenager Clay Jensen, in his quest to uncover the story behind his classmate and crush, Hannah, and her decision to end her life.
+played by Katherene Langford.</p>
+<form action="series.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/got.jpg">
+</div>
+<div class="title">
+ <h1>
+Game Of Thrones</h1>
+</div>
+<div class="des">
+ <p>
+Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years
+.</p>
+<form action="GOT.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/stranger.jpg">
+</div>
+<div class="title">
+ <h1>
+Stranger Things</h1>
+</div>
+<div class="des">
+ <p>
+When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.
+Played by Millie Bobby Brown.</p>
+<form action="strangerthings.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/crown.jpg">
+</div>
+<div class="title">
+ <h1>
+Crown</h1>
+</div>
+<div class="des">
+ <p>
+Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.</p>
+<form action="crown.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/jackrayn.jpg">
+</div>
+<div class="title">
+ <h1>
+Jack Ryan</h1>
+</div>
+<div class="des">
+ <p>
+An up-and-coming CIA analyst, Jack Ryan, is thrust into a dangerous field assignment as he uncovers a pattern in terrorist communication that launches him into the center of a dangerous gambit.</p>
+<form action="jackryan.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+1)install Xamp
+
+2)copy file and save it to  Xampp\htdocs  " D:\xampp\htdocs\video streaming "
+
+3)and change beloe parameters in configuration in php.ini  & my.ini through xampp controller
+    to upload Large vedio files to database
+    in my.ini (mysql config)
+    max_allowed_packet=4000M
+    innodb_log_file_size=4000M
+
+    in PHP.ini(Appach config)
+    max_allowed_packet=4000M
+    innodb_log_file_size=4000M
+    post_max_size=5000M  in apach php.ini
+    upload_max_filesize=5000M
+

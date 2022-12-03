@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h3{
+  color: black;
+  font-size: 25px;
+}
+p,h1,h2
+{
+	color: black;
+	font-size: 15px;
+}
+.post
+{
+padding: 10px;
+width: 70px;
+}
+.pannel-body
+{
+	color: black;
+}
+
+#Home {background-image:url("images/13-reasons.jpg");}
+#News {background-image:url("images/13-reasons.jpg");}
+#Contact {background-image:url("images/13-reasons.jpg");}
+#About {background-color: black;}
+
+body {
+	background-color: #666;	
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	background-color:#05859e;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+	
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+.panel-body {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+</style>
+</head>
+<body>
+	
+   
+	<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+     <img src="images/logo.png">
+  </div>
+</div>
+
+
+
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen">Season 1</button>
+<button class="tablink" onclick="openPage('News', this, 'orange')" >Season 2</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Season 3</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+ 
+<div id="Home" class="tabcontent">
+
+<!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter One: The Vanishing of Will Byers /
+Stranger Things(season 1, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">On his way home, Will sees something terrifying; a sinister secret lurks in the depths of a nearby government lab.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Two: The Weirdo on Maple Street
+Stranger Things(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">Mike, Dustin and Lucas try to talk to the girl they saw in the woods; Hopper questions Joyce about a disturbing phone call.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Three: Holly, Jolly
+Stranger Things(season 1, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">Increasingly concerned, Nancy searches for Barb and tries to find out what Jonathan has been up to; Joyce thinks Will is trying to talk to her.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Four: The Body
+Stranger Things(season 1, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">Refusing to accept that Will is dead, Joyce tries to connect with him; the boys decide to give Eleven a makeover; Jonathan and Nancy form an unexpected alliance.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Five: The Flea and the Acrobat
+Stranger Things(season 1, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">Hopper gets into the lab; Jonathan and Nancy confront the force that took Will; the boys talk to Mr. Clarke about traveling to another dimension.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+ 
+
+</div>
+
+<div id="News" class="tabcontent">
+<!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter One: Madmax
+(season 2, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger2.jpg">
+      	<p class="pannel-body">As the town prepares for Halloween, a high-scoring rival shakes things up at the arcade; skeptical Hopper inspects a field of rotting pumpkins.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Two: Trick or Treat, Freak
+(season 2, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger2.jpg">
+      	<p class="pannel-body">After Will sees something terrible while trick or treating, Mike wonders if Eleven is still out there; Nancy wrestles with the truth about Barb.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Three: The Pollywog
+(season 2, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger2.jpg">
+      	<p class="pannel-body">Dustin adopts a strange new pet; Eleven grows increasingly impatient; well-meaning Bob urges Will to stand up to his fears.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Four: Will the Wise
+(season 2, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger2.jpg">
+      	<p class="pannel-body">Ailing Will opens up to Joyce -- with disturbing results; as Hopper digs for the truth, Eleven unearths a surprising discovery.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+  <!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter One: Suzie, Do You Copy?
+(season 3, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger3.jpg">
+      	<p class="pannel-body">Summer brings new jobs and romance; while attempting to contact Suzie, Dustin picks up a Russian broadcast on his radio; Will senses that something is wrong.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Two: The Mall Rats
+(season 3, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger3.jpg">
+      	<p class="pannel-body">Nancy and Jonathan investigate a lead; Steve and Robin volunteer for a secret mission; Max takes Eleven shopping; Billy has disturbing visions.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Three: The Case of the Missing Lifeguard
+(season 3, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger3.jpg">
+      	<p class="pannel-body">El and Max search for Billy; Will insists on a day without girls; Steve and Dustin look for Russian spies; Joyce and Hopper go back to Hawkins Lab to see if there is any activity.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Four: The Sauna Test
+(season 3, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger3.jpg">
+      	<p class="pannel-body">A code red brings the gang back together; Karen urges Nancy to keep digging; Robin finds blueprints of the mall.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Chapter Five: The Flayed
+(season 3, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/stranger.jpg">
+      	<p class="pannel-body">Strange things lurk inside an old farmhouse; something is hidden deep beneath the Starcourt Mall; the Mind Flayer is gathering strength.</p>
+      </div>
+      <a href="Admin/strangerthings.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3 style="color: white;">Stranger Things</h3>
+  <p class="rating" style="color: white;">IMDB:8.8/10</p>
+  <p class="rating" style="color: white;">Rotten Tomatoes:93%</p>
+  <p class="rating" style="color: white;">Tv.com:8.9/10</p>
+  <p style="color: white;">Stranger Things is an American science fiction horror web television series created by the Duffer Brothers and released on Netflix. The siblings also serve as executive producers with Shawn Levy and Dan Cohen. The first season, broadcast in 2016, stars Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Cara Buono, and Matthew Modine, with Noah Schnapp and Joe Keery in recurring roles. For the second season, Schnapp and Keery were made series regulars, as were newly cast Sadie Sink, Dacre Montgomery, Sean Astin, and Paul Reiser, with Priah Ferguson appearing in a recurring role. Maya Hawke joined the cast for the third season, while Ferguson was promoted to a series regular.
+
+Set in the fictional town of Hawkins, Indiana, in November 1983, the first season focuses on the investigation into the disappearance of a young boy amid supernatural events occurring around the town, including the appearance of a girl with psychokinetic abilities who helps the missing boy's friends in their search. The second season, titled Stranger Things 2, is set one year later in October 1984 and deals with the characters' attempts to return to normality and the aftermath of the events from the first season. The third season, titled Stranger Things 3, is set in July 1985 and focuses on the characters growing up amidst a new threat during the Fourth of July.</p>
+<p style="color: white;">The Duffer Brothers developed the series as a mix of investigative drama alongside supernatural elements portrayed with childlike sensibilities. They set the series in the 1980s and created an homage to the pop culture of that decade. Several themes and directorial aspects were inspired and aesthetically informed by the works of Steven Spielberg, John Carpenter, and Stephen King, among others, including several films, anime, and video games.
+
+The first season of eight episodes premiered on Netflix on July 15, 2016. It received critical acclaim for its characterization, pacing, atmosphere, acting, soundtrack, directing, writing, and homages to 1980s films. The second season consisting of nine episodes was released on October 27, 2017. A third season consisting of eight episodes was released on July 4, 2019. In September 2019, the show was renewed for a fourth season. The Duffer Brothers have said that Stranger Things is likely to end after its fourth or fifth season. The series has received 31 Primetime Emmy Award nominations, including for Outstanding Drama Series, and four Golden Globe Award nominations, and it won the Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series in 2016.</p>
+</div>
+</div>
+
+<
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

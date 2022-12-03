@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webseries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h3{
+  color: black;
+  font-size: 25px;
+}
+p,h1,h2
+{
+	color: black;
+	font-size: 15px;
+}
+.post
+{
+padding: 10px;
+width: 70px;
+}
+.pannel-body
+{
+	color: black;
+}
+
+#Home {background-image:url("images/13-reasons.jpg");}
+#News {background-image:url("images/13-reasons.jpg");}
+#Contact {background-image:url("images/13-reasons.jpg");}
+#About {background-color: black;}
+
+body {
+	background-color: #666;	
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	background-color:#05859e;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+	
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+.panel-body {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+.rating{
+  display:block;
+}
+
+</style>
+</head>
+<body>
+	
+   
+	<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+     <img src="images/logo.png">
+  </div>
+</div>
+
+
+
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen">Season 1</button>
+<button class="tablink" onclick="openPage('News', this, 'orange')" >Season 2</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Season 3</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+ 
+<div id="Home" class="tabcontent">
+
+<!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Pilot /
+Jack Ryan(season 1, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn.jpg">
+      	<p class="pannel-body">CIA analyst Jack Ryan uncovers a series of suspicious transactions that take him and his boss James Greer out from behind their desks into the field to hunt down a powerful new threat to the world; Hanin questions her husband's affairs.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>French Connection /
+Jack Ryan(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn.jpg">
+      	<p class="pannel-body">Jack and Greer decode a fresh piece of intel that takes them to Paris and one step closer to the elusive Suleiman; Hanin's husband returns home with a renewed fervor for his secretive mission, leaving her unsure of their family's future.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The Wolf /
+Jack Ryan(season 1, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn.jpg">
+      	<p class="pannel-body">As Jack and Cathy grow closer, Jack's double-life is put to the test; a show of force from Suleiman adds to his ranks and brings him one step closer to his next attack.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Black 22 /
+Jack Ryan(season 1, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn.jpg">
+      	<p class="pannel-body">Drone pilot Victor struggles with the immense responsibility attached to his job; Jack and Greer join French intelligence officers on a mission to track down Suleiman's brother; Hanin must make a dangerous decision for the sake of her children.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="News" class="tabcontent">
+<!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Cargo
+(season 2, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn2.jpg">
+      	<p class="pannel-body">Jack Ryan searches for the truth behind Venezuela's nuclear ties and its imminent threat to the United States; about to be sidelined from his new post in Russia, James Greer joins Jack in Venezuela in the midst of a dictator's re-election effort.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Tertia Optio
+(season 2, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn2.jpg">
+      	<p class="pannel-body">Sen. Chapin grants Jack permission to stay in Venezuela; President Reyes denies involvement in an American senator's assassination; Jack and Harry team up to follow a lead that could create dissension within the ranks.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Orinoco
+(season 2, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn2.jpg">
+      	<p class="pannel-body">The U.S. Special Activities team lands in Venezuela, where Jack's intel leads it to a militia-guarded compound; a team member gets left behind in the jungle when the mission goes awry; President Reyes' opponent proves to be a real contender.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Dressed to Kill
+(season 2, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn2.jpg">
+      	<p class="pannel-body">Relieved of duty in Venezuela, Jack follows a new trail to London, seeking help from MI5, only to discover the man that he is after is also after him; back in Venezuela, Reyes makes Gloria an offer.</p>
+      </div>
+      <a href="Admin/jackryan.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+  <!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Season 3 COMING SOON
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/jackrayn2.jpg">
+      	<p class="pannel-body">The Season 3 of JACK RYAN will be released in 2nd part of 2020. We will upadte the content when it releases. THANK YOU.  </p>
+      </div>
+    </div>
+ 
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3 style="color: white;">Tom Clancy's Jack Ryan</h3>
+  <p class="rating" style="color: white;">IMDB:8.2/10</p>
+  <p class="rating" style="color: white;">Rotten Tomatoes:73%</p>
+  <p class="rating" style="color: white;">Tv.com:8.2/10</p>
+  <p style="color: white;">Author Tom Clancy introduced the character of Jack Ryan in a series of books before Ryan headed to the big screen in several films. Now the former U.S. Marine is featured in an episodic series for the first time, with John Krasinski portraying Ryan in this Amazon original thriller that centers on Ryan as an up-and-coming CIA analyst. He is thrust into a dangerous field assignment for the first time and uncovers a pattern in terrorist communication. That launches him into the middle of a dangerous gambit with a new breed of terrorism that threatens destruction on a global scale.
+</p>
+</div>
+
+<
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h3{
+  color: black;
+  font-size: 25px;
+}
+p,h1,h2
+{
+	color: black;
+	font-size: 15px;
+}
+.post
+{
+padding: 10px;
+width: 70px;
+}
+.pannel-body
+{
+	color: black;
+}
+
+#Home {background-image:url("images/13-reasons.jpg");}
+#News {background-image:url("images/13-reasons.jpg");}
+#Contact {background-image:url("images/13-reasons.jpg");}
+#About {background-color: black;}
+
+body {
+	background-color: #666;	
+}
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	background-color:#05859e;
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+	
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+.panel-body {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+</style>
+</head>
+<body>
+	
+   
+	<div class="topnav">
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+ <div class="search-container">
+   <img src="images/logo.png">
+  </div> 
+</div>
+
+
+
+</div>
+<button class="tablink" onclick="openPage('Home', this, 'orange')" id="defaultOpen">Season 1</button>
+<button class="tablink" onclick="openPage('News', this, 'orange')" >Season 2</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Season 3</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+ 
+<div id="Home" class="tabcontent">
+
+<!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Tape 1, Side A
+13 Reasons Why episode (season 1, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons.jpg">
+      	<p class="pannel-body">As students mourn the death of classmate Hannah Baker, the girl's friend receives a box of tapes containing messages she recorded before her suicide.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Tape 1, Side B
+13 Reasons Why episode (season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons.jpg">
+      	<p class="pannel-body">Hannah makes friends with new students Jessica and Alex; Justin fails to show up at school; Hannah's mother makes a troubling discovery.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Tape 2, Side A
+13 Reasons Why episode (season 1, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons.jpg">
+      	<p class="pannel-body">Jealousy and gossip cause Hannah's relationships to begin to fray; Alex struggles with regret; the guys pressure Clay into getting drunk.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Tape 2, Side B
+13 Reasons Why episode (season 1, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons.jpg">
+      	<p class="pannel-body">Hannah believes someone is stalking her and lays a trap; Hannah's mother confronts the principal; Clay takes action against someone who wronged Hannah.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Tape 3, Side A
+13 Reasons Why episode (season 1, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons.jpg">
+      	<p class="pannel-body">A rude rumor ruins the mood when Hannah and Clay connect at the school dance; Clay takes Courtney to Hannah's grave.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+ 
+
+</div>
+
+<div id="News" class="tabcontent">
+<!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The First Polaroid
+(season 2, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons2.jpg">
+      	<p class="pannel-body">Five months after Hannah's death, the case against Liberty goes to trial, with Tyler as the first witness; Clay finds a troubling photo in his locker.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>Two Girls Kissing
+(season 1, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons2.jpg">
+      	<p class="pannel-body">Courtney makes a brave decision; Clay's memories of Hannah drive a wedge between him and Skye; someone trashes the yearbook office.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The Drunk Slut
+(season 2, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons2.jpg">
+      	<p class="pannel-body">Worried about threats against them, Alex and Clay urge Jessica to testify about Bryce; Clay enlists Tony's help to find a potential witness.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+ <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The Second Polaroid
+(season 2, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons2.jpg">
+      	<p class="pannel-body">Clay hides a secret from his parents; concerned about his reputation, Marcus lies in court; Jessica and Alex skip school together.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+  <!--pannel -->
+
+  <div class="panel panel-success">
+      <div class="panel-heading"><h1>Yeah. I'm The New Girl
+(season 3, episode 1)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons3.jpg">
+      	<p class="pannel-body">The police question Clay about Bryce's disappearance; Clay remembers the aftermath of Spring Fling, when he raced to cover Tyler's tracks and met Ani.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+ 
+  <!--pannel -->
+
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>If You're Breathing, You're a Liar
+(season 3, episode 2)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons3.jpg">
+      	<p class="pannel-body">After learning about Chloe's pregnancy, Clay and Ani pay her a visit; Chloe recalls how she leaned on Zach for support -- and that Bryce didn't know.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+<div class="panel panel-success">
+      <div class="panel-heading"><h1>The Good Person Is Indistinguishable From the Bad
+(season 3, episode 3)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons3.jpg">
+      	<p class="pannel-body">As the police investigation puts the school on edge, Ani remembers that Jessica confronted Bryce; growing suspicious of Jess, Ani and Clay follow her.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Angry, Young And Man
+(season 3, episode 4)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons3.jpg">
+      	<p class="pannel-body">After Tyler admits he still has a gun, the group keeps tabs on him at school; their worry deepens upon learning he had a motive to kill Bryce.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+  <!--pannel -->
+ <div class="panel panel-success">
+      <div class="panel-heading"><h1>Nobody's Clean
+(season 3, episode 5)
+</h1></div>
+      <div class="w3-panel w3-leftbar w3-border-blue w3-pale-blue">
+      	<img src="images/13reasons3.jpg">
+      	<p class="pannel-body">The police search the school after finding steroids in Bryce's car; Alex recalls how Bryce supported Alex after Jessica dumped him.</p>
+      </div>
+      <a href="Admin/13reasons.php" class="round-button"><i class="fa fa-play fa-2x"></i></a>
+    </div>
+
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h3 style="color: white;">13 Reasons Why</h3>
+  <p class="rating" style="color: white;">IMDB:7.8/10</p>
+  <p class="rating" style="color: white;">Rotten Tomatoes:38%</p>
+  <p class="rating" style="color: white;">Tv.com:8/10</p>
+  <p style="color: white;">13 Reasons Why (stylized onscreen as TH1RTEEN R3ASONS WHY) is an American teen drama web television series developed for Netflix by Brian Yorkey, based on the 2007 novel Thirteen Reasons Why by Jay Asher. The series revolves around seventeen-year-old high school student, Clay Jensen, and his deceased friend Hannah Baker, who takes her own life after having to face a culture of gossip, bullying and sexual assault at her high school and a lack of support from her friends, her family and her school. A box of cassette tapes recorded by Hannah in the weeks preceding her suicide detail why she chose to end her life. The series is produced by July Moon Productions, Kicked to the Curb Productions, Anonymous Content and Paramount Television, with Yorkey and Diana Son serving as showrunners.
+
+Dylan Minnette stars as Clay Jensen, while Katherine Langford plays Hannah Baker. Christian Navarro, Alisha Boe, Brandon Flynn, Justin Prentice, Miles Heizer, Ross Butler, Devin Druid, Amy Hargreaves, Derek Luke, Kate Walsh, and Brian d'Arcy James also star. A film from Universal Pictures based on Thirteen Reasons Why began development in February 2011, with Selena Gomez set to star as Hannah, before being shelved in favor of a television series and Netflix ordering the first season in October 2015, with Gomez instead serving as an executive producer.
+</p>
+<p style="color: white;">
+The first season was released on Netflix on March 31, 2017. It received positive reviews from critics and audiences, who praised its subject matter and acting, particularly the performances of Minnette and Langford. For her performance, Langford received a Golden Globe Award nomination for Best Actress – Television Series Drama.[4] However, its graphic depiction of issues such as suicide and rape, along with other mature content prompted concerns from mental health professionals. In response, Netflix added a warning card and from March 2018 on, a video that plays at the start of each season warning viewers about its themes.[5] In July 2019, Netflix edited out the suicide scene in the first season's final episode.[6]
+
+In May 2017, Netflix renewed 13 Reasons Why for a second season; filming began the next month and concluded that December. The second season was released on May 18, 2018, and received mixed reviews from audiences. Coinciding with the release of the second season, Netflix released a video with the cast that cautioned viewers on some of the topics covered in the show and provided a support website with crisis numbers for people affected by depression, anxiety and other mental health issues.[7] A third season was ordered in June 2018 and was released on August 23, 2019. In August 2019, the series had been renewed for a fourth and final season.[8] Critical and audience reaction to the series has been divided, with the program generating controversy between audiences and industry reviewers alongside acquiring a loyal following</p>
+</div>
+
+<
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

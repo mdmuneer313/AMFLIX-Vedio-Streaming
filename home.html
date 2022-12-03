@@ -1,0 +1,472 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>AMFLIX</title>
+  <link rel = "icon" type = "image/png" href = "images/hnlogo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+  *{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px orange;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+  color: white;
+ }
+ p{
+  color: white;
+  font-size: 15px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: green;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+.playone
+{
+  padding: 10px 40px;
+  margin: 20px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="topnav">
+  <a  href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-book"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="movies.html"><i class="fa fa-film"></i> Movies</a>
+  <a href="webseries.html"><i class="glyphicon glyphicon-expand"></i> TvShows</a>
+  <a href="search.html"><i class="glyphicon glyphicon-search"></i>Search</a>
+  <div class="search-container">
+     <img src="images/logo.png">
+  </div>
+</div>
+
+<div class="mySlides w3-display-container w3-center">
+    <img src="imageslider/aquaman.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Aquaman</h3>
+      <p><b>You really are out of your mind.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imageslider/batman.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Batman</h3>
+      <p><b>I Am Vengeance</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imageslider/spiderman.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Spiderman</h3>
+      <p><b>With great power, comes great responsibility.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imageslider/avenger.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Avenger</h3>
+      <p><b>THE CITY IS FLYING AND WE’RE FIGHTING AN ARMY OF ROBOTS...</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="imageslider/blackpanter.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Blackpanter</h3>
+      <p><b>WAKANDA FOREVER!.</b></p>    
+    </div>
+  </div>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+</script>
+<div style="margin-left:80px;">
+ 
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+</div>
+
+
+
+<div class="main">
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/harry-potter.jpg">
+</div>
+<div class="title">
+ <h1 style="font-size:17px">
+Harry Potter and the Sorcerer's Stone</h1>
+</div>
+<div class="des">
+ <p>
+An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world..</p>
+<form action="Admin/hp.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/ironman.jpg">
+</div>
+<div class="title">
+ <h1>
+IronMan(2008)</h1>
+</div>
+<div class="des">
+ <p>
+After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.
+And becomes part of avengers.</p>
+<form action="Admin/im.php">
+  <button class="playone">Play</button>
+</form>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="imageslider/aquaman.jpg">
+</div>
+<div class="title">
+ <h1>
+Aquaman</h1>
+</div>
+<div class="des">
+ <p>
+Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.
+Becomes King of the ocean.</p>
+<form action="Admin/am.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="imageslider/blackpanter.jpg">
+</div>
+<div class="title">
+ <h1>
+BlackPanther</h1>
+</div>
+<div class="des">
+ <p>
+T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.</p>
+<form action="Admin/bp.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="imageslider/avenger.jpg">
+</div>
+<div class="title">
+ <h1>
+Avengers:Infinity war</h1>
+</div>
+<div class="des">
+ <p>
+The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</p>
+<form action="Admin/aiw.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/thor.jpg">
+</div>
+<div class="title">
+ <h1>
+Thor:The Dark World</h1>
+</div>
+<div class="des">
+ <p>
+When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.cast Chris Hemsworth.</p>
+<form action="Admin/tdw.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/imitation.jpg">
+</div>
+<div class="title">
+ <h1>
+The Imitation Game</h1>
+</div>
+<div class="des">
+ <p>
+During World War II, the English mathematical genius Alan Turing tries to crack the German Enigma code with help from fellow mathematicians.
+played by Benedict Cumberbatch.</p>
+<form action="Admin/ig.php">
+  <button class="playone">Play</button>
+</form>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="images/spiderman.jpg">
+</div>
+<div class="title">
+ <h1>
+Spiderman:Far From Home</h1>
+</div>
+<div class="des">
+ <p>
+Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.
+He gets the tech left out by ironman.</p>
+<form action="Admin/sffh.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="imageslider/batman.jpg">
+</div>
+<div class="title">
+ <h1>
+Dark Knight Rises</h1>
+</div>
+<div class="des">
+ <p>
+Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, Bruce Wyane (Batman) is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.</p>
+<form action="Admin/dkr.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+
+<div class="card">
+
+<div class="image">
+   <img src="images/twilight2.jpg">
+</div>
+<div class="title">
+ <h1>
+The Twilight Saga:New Moon</h1>
+</div>
+<div class="des">
+ <p>
+Edward leaves Bella after an attack that nearly claimed her life, and, in her depression, she falls into yet another difficult relationship - this time with her close friend, Jacob Black.</p>
+<form action="Admin/tnm.php">
+  <button class="playone">Play</button>
+</form>
+</div>
+</div>
+
+<div class="card">
+
+<div class="image">
+   <img src="images/13reasons.jpg">
+</div>
+<div class="title">
+ <h1>
+13 Reasons Why(season 1)</h1>
+</div>
+<div class="des">
+ <p>
+Follows teenager Clay Jensen, in his quest to uncover the story behind his classmate and crush, Hannah, and her decision to end her life.
+played by Katherene Langford.</p>
+<form action="series.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/got.jpg">
+</div>
+<div class="title">
+ <h1>
+Game Of Thrones</h1>
+</div>
+<div class="des">
+ <p>
+Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.
+Played by kit Harrington.</p>
+<form action="GOT.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="images/stranger.jpg">
+</div>
+<div class="title">
+ <h1>
+Stranger Things</h1>
+</div>
+<div class="des">
+ <p>
+When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.
+Played by Millie Bobby Brown.</p>
+<form action="strangerthings.html">
+  <button class="playone">View</button>
+</form>
+</div>
+</div>
+<!--cards -->
+
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+</body>
+</html>
